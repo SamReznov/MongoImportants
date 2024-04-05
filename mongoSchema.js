@@ -19,7 +19,7 @@ db.createCollection("nonFiction",{
 })
 //this is for modifing schema 
 db.runCommand({ 
-    callMod:'nonFiction',
+    collMod:'nonFiction',
     validator:{
         $jsonSchema:{
             required:['name','price','authors'],
